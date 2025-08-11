@@ -14,13 +14,88 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #99dd99;
+    --foreground: #121212;
   }
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_opszwght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mozilla';
+  src: url('/assets/fonts/MozillaHeadline-VariableFont_wdthwght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('/assets/fonts/Saira-VariableFont_wdthwght.ttf') format('truetype');
+  font-display: swap;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.group-name {
+  color: #111111;
+  font-size: 75px;
+  font-family: 'Inter';
+  font-weight: 800;
+  margin-left: 25px; 
+}
+
+.redirect-main {
+  color: #125612;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Mozilla';
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.header-1 {
+  color: #125612;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Saira';
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  text-wrap: inherit;
+}
+
+.header-2 {
+  color: #347834;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Saira';
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  text-wrap: inherit;
+}
+
+.button-about {
+  color: #ffffff; 
+  background-color: #008336;
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button-about:hover {
+  background-color: #33b669;
 }
