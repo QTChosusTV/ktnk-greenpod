@@ -55,8 +55,6 @@ export default function Home() {
         })
         .select()
         .single();
-      // console.log(response);
-      // alert("Đặt hàng thành công!");
       router.push(`/status?id=${data.id}`);
     } catch (err) {
       setError(

@@ -9,16 +9,13 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("Loading start");
     const timer = setTimeout(() => {
-      console.log("Loading end");
       setLoading(false);
     }, 100);
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    console.log("Render spinner");
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
         <div className="animate-spin rounded-full h-12 w-12 border-4 border-green-600 border-b-transparent"></div>

@@ -25,7 +25,6 @@ export default function Home() {
       setLoading(false);
     };
     fetchOrder();
-    console.log(order)
   }, [id]);
 
   useEffect(() => {
