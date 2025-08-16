@@ -38,8 +38,8 @@ export default function SearchOrder() {
 
   function orderConvert(order_id: number): string {
     if (order_id == 1) return "Gói 50 viên";
-    if (order_id == 2) return "Gói 100 viên";
-    if (order_id == 2) return "Gói 1000 viên";
+    else if (order_id == 2) return "Gói 100 viên";
+    else if (order_id == 3) return "Gói 1000 viên";
     return "";
   }
 
