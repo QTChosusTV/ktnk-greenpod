@@ -79,7 +79,8 @@ export default function SearchOrder() {
             <p><strong>Email:</strong> {order.email}</p>
             <p><strong>SĐT:</strong> {order.phone}</p>
             <p><strong>Địa chỉ:</strong> {order.address}</p>
-            <p><strong>Gói:</strong> {orderConvert(order.amount)}</p>
+            <p><strong>Gói:</strong> {orderConvert(order.order_id)}</p>
+            <p><strong>Số lượng:</strong> {order.amount}</p>
             <p><strong>Ngày đặt:</strong> {new Date(order.created_at).toLocaleString()}</p>
             <p><strong>Trạng thái:</strong> {order.status}</p>
           </div>
