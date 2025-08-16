@@ -36,7 +36,7 @@ export default function Home() {
             alignItems: "center",
             gap: "20px",
             marginRight: "50px",
-            marginTop: "50px",
+            marginTop: "100px",
           }}
         >
           <div
@@ -48,7 +48,7 @@ export default function Home() {
           >
             <p className="header-1">Viên Ươm Hữu Cơ – Khởi Nguồn Sự Sống</p>
             <p className="header-2">
-              Giải pháp ươm trồng thông minh, thân thiện môi trường, giúp hạt giống phát triển mạnh mẽ và bền vững.
+               Giải pháp nông nghiệp thông minh, tăng tỉ lệ nẩy mầm, giảm chi phí, nâng cao hiệu quả mùa vụ.
             </p>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <Link className="button-about" href="/about">

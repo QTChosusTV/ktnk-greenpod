@@ -32,7 +32,7 @@ export default function RootLayout({
             flexWrap: "nowrap",
             justifyContent: "flex-start",
             alignItems: "center",
-            backgroundColor: "#ccfbcc",
+            backgroundColor: "#76cd76ff",
             color: "#000",
             padding: "10px 20px",
             width: "100%",
@@ -42,9 +42,8 @@ export default function RootLayout({
           <p className="group-name" style={{ marginRight: 'auto' }}>K.T.N.K</p>
           <Link href="/" className="redirect-main" style={{ marginLeft: '20px' }}>Home</Link>
           <Link href="/about" className="redirect-main" style={{ marginLeft: '20px' }}>About</Link>
-          <Link href="/services" className="redirect-main" style={{ marginLeft: '20px' }}>Services</Link>
-          <Link href="/contact" className="redirect-main" style={{ marginLeft: '20px' }}>Contact</Link>
-          <Link href="/faq" className="redirect-main" style={{ marginLeft: '20px' }}>FAQ</Link>
+          <Link href="/services" className="redirect-main" style={{ marginLeft: '20px' }}>Services</Link> 
+          <Link href="/search" className="redirect-main" style={{ marginLeft: '20px' }}>Search Orders</Link> 
         </section>
         {children}
       </body>
