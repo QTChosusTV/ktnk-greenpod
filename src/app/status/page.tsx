@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { supabase } from "../utils/supabaseClient";
 
-export default function Home() {
+export default function Home({ searchParams }: { searchParams: { [key: string]: string } }) {
 
-  const searchParams = useSearchParams();
-  const id = searchParams.get("id");
+  const params = useSearchParams();
+  const id = params.get("id");
 
   const [order, setOrder] = useState<any>(null);
   const [loading, setLoading] = useState(true);
