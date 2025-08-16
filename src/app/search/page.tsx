@@ -69,7 +69,7 @@ export default function SearchOrder() {
           <p className="text-red-600 mt-4 text-center" style={{fontFamily: 'Barlow'}}>❌ Không tìm thấy đơn hàng hoặc chưa điền ID của đơn hàng</p>
         )}
 
-        {!notFound && !loading && (
+        {!notFound && !loading && order && (
           <p className="text-green-600 mt-4 text-center" style={{fontFamily: 'Barlow'}}>✅ Đã tìm thấy đơn hàng!</p>
         )}
 
