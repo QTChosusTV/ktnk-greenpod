@@ -61,7 +61,7 @@ export default function StatusClient() {
       <p className="header-2" style={{ textAlign: "left" }}>
         <strong>Giá:</strong> {calculatePrice(order.amount, order.order_id).toLocaleString("vi-VN")} VND
       </p>
-      <p className="header-1">Cảm ơn bạn đã đặt hàng! Chúng tôi sẽ liên hệ sớm nhất.</p>
+      <p className="header-1">Cảm ơn bạn đã đặt hàng! Chúng tôi sẽ liên hệ với bạn sớm nhất.</p>
     </main>
   );
 }

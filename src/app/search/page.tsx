@@ -3,6 +3,7 @@
 import '../globals.css';
 import { useEffect, useState } from "react";
 import { supabase } from "../utils/supabaseClient";
+import AnimatedContent from '../../../components/reactbits/AnimatedContent/AnimatedContent';
 
 export default function SearchOrder() {
   const [orderId, setOrderId] = useState("");
@@ -45,29 +46,41 @@ export default function SearchOrder() {
 
   return (
     <main className="flex items-center justify-center" style={{marginTop: 150}}>
-      <div className="bg-white shadow-md rounded-xl p-6" style={{width: 600}}>
-        <h1 className="header-1" style={{marginBottom: 15}}>Tra cứu đơn hàng</h1>
-        
-        <input
-          type="text"
-          value={orderId}
-          onChange={(e) => setOrderId(e.target.value)}
-          placeholder="Nhập mã đơn hàng"
-          className="text-input"
-        />
+      <AnimatedContent  
+          distance={50}
+          direction="vertical"
+          reverse={false}
+          duration={0.8}
+          ease="power3.out"
+          initialOpacity={0.0}
+          animateOpacity
+          scale={1.0}
+          threshold={0.2}
+          delay={0.0}
+      >
+        <div className="bg-white shadow-md rounded-xl p-6" style={{width: 600}}>
+          <h1 className="header-1" style={{marginBottom: 15}}>Tra cứu đơn hàng</h1>
+          
+          <input
+            type="text"
+            value={orderId}
+            onChange={(e) => setOrderId(e.target.value)}
+            placeholder="Nhập mã đơn hàng"
+            className="text-input"
+          />
 
-        <button
-          onClick={handleSearch}
-          disabled={loading}
-          className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition"
-          style={{marginTop: 15, fontFamily: 'Barlow', marginBottom: 5}}
-        >
-          {loading ? "Đang tìm..." : "Tìm kiếm"}
-        </button>
+          <button
+            onClick={handleSearch}
+            disabled={loading}
+            className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition"
+            style={{marginTop: 15, fontFamily: 'Barlow', marginBottom: 5}}
+          >
+            {loading ? "Đang tìm..." : "Tìm kiếm"}
+          </button>
 
-        {notFound && !loading && (
-          <p className="text-red-600 mt-4 text-center" style={{fontFamily: 'Barlow'}}>❌ Không tìm thấy đơn hàng hoặc chưa điền ID của đơn hàng</p>
-        )}
+          {(notFound) && (!loading) && (
+            <p className="text-red-600 mt-4 text-center" style={{fontFamily: 'Barlow'}}>❌ Không tìm thấy đơn hàng hoặc chưa điền ID của đơn hàng</p>
+          )}
 
         {!notFound && !loading && order && (
           <p className="text-green-600 mt-4 text-center" style={{fontFamily: 'Barlow'}}>✅ Đã tìm thấy đơn hàng!</p>
