@@ -99,6 +99,7 @@ export default function SearchOrder() {
           </div>
         )}
       </div>
+      </AnimatedContent>
     </main>
   );
 }
