@@ -86,7 +86,14 @@ const knowledgeBase: KnowledgeItem[] = [
     question: 'Giá thành của sản phẩm là bao nhiêu?',
     answer: 'Giá của bao viên ươm (1000 viên) sản phẩm trên là 2.600.000 VNĐ, khoảng ~100 USD',
     keywords: ['giá thành', 'GreenPod']
+  },
+  {
+    id: '12',
+    question: 'Một số thông tin về sản phẩm?',
+    answer: 'GreenPod Organic là viên ươm hữu cơ thông minh, được sản xuất từ xơ dừa, tro trấu, phân trùn quế, rong biển và các vật liệu sinh học phân hủy tự nhiên. Sản phẩm giúp tăng tỷ lệ nảy mầm đến 96%, cây con phát triển đồng đều và hạn chế bệnh hại rễ. Mỗi bao gồm có 1000 viên, giá 2.600.000 VND, khoảng ~100 USD.',
+    keywords: ['giá thành', 'GreenPod', 'thông tin chung', 'thông tin sản phẩm', 'sản phẩm']
   }
+
 ];
 
 
