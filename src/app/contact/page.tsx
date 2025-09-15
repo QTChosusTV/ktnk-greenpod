@@ -80,6 +80,12 @@ const knowledgeBase: KnowledgeItem[] = [
     question: 'Đối tác và hoạt động chính của GreenPod là gì?',
     answer: 'Đối tác: cơ sở nguyên liệu (xơ dừa, vỏ trứng, than củi), viện nghiên cứu, NGO, hợp tác xã, KOL ngành nông nghiệp. Hoạt động: R&D, sản xuất – kiểm định, marketing đa kênh, xây dựng cộng đồng, quản lý chuỗi tái chế.',
     keywords: ['đối tác', 'R&D', 'sản xuất', 'marketing', 'cộng đồng', 'chuỗi tái chế']
+  },
+  {
+    id: '11',
+    question: 'Giá thành của sản phẩm là bao nhiêu?',
+    answer: 'Giá của bao viên ươm (1000 viên) sản phẩm trên là 2.600.000 VNĐ, khoảng ~100 USD',
+    keywords: ['giá thành', 'GreenPod']
   }
 ];
 
