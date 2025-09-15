@@ -34,10 +34,7 @@ export default function Home() {
   }
 
   function calculatePrice(amount: number, order_id: number): number {
-    if (order_id == 1) return amount*45000;
-    else if (order_id == 2) return amount*85000;
-    else if (order_id == 3) return amount*800000;
-    return 0;
+    return amount*2600000; 
   }
 
   const handleSubmit = async () => {
@@ -52,7 +49,7 @@ export default function Home() {
           address,
           note,
           amount,
-          order_id
+          order_id: 3
         })
         .select()
         .single();
@@ -108,9 +105,7 @@ export default function Home() {
           </div>
 
           <select value={order_id} onChange={(e) => setOrderID(Number(e.target.value))} className="border rounded p-1" style={{marginTop: 35, height: 50}}>
-            <option value={1}>Gói 50 viên (45.000 VND)</option>
-            <option value={2}>Gói 100 viên (85.000 VND)</option>
-            <option value={3}>Gói 1000 viên (800.000 VND)</option>
+            <option value={3}>Gói 1000 viên (2.600.000 VND)</option>
           </select>
 
           <p className='header-2' style={{marginTop: 35, fontFamily: 'Saira', fontWeight: 800}}> Tổng: {calculatePrice(amount ?? 0, order_id ?? 0).toLocaleString("vi-VN")} VND </p>

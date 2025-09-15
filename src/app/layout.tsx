@@ -52,6 +52,7 @@ export default function RootLayout({
           <Link href="/services" className="redirect-main" style={{ marginLeft: '20px' }}>Services</Link> 
           <Link href="/search" className="redirect-main" style={{ marginLeft: '20px' }}>Search Orders</Link> 
           <Link href="/faq" className="redirect-main" style={{ marginLeft: '20px' }}>FAQ</Link>
+          <Link href="/contact" className="redirect-main" style={{ marginLeft: '20px' }}>Contact</Link>
         </section>  
         {children}
       </body>

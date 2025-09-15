@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import '../globals.css';
+import "../globals.css";
 import { useEffect, useState } from "react";
 import AnimatedContent from "../../../components/reactbits/AnimatedContent/AnimatedContent";
 
@@ -23,88 +23,161 @@ export default function About() {
 
   return (
     <main style={{ padding: "20px" }}>
-      <AnimatedContent  
-          distance={50}
-          direction="vertical"
-          reverse={false}
-          duration={0.8}
-          ease="power3.out"
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.2}
-          delay={0.0}
+      {/* About Us */}
+      <AnimatedContent
+        distance={50}
+        direction="vertical"
+        duration={0.8}
+        ease="power3.out"
+        initialOpacity={0.0}
+        animateOpacity
+        threshold={0.2}
       >
-        <section style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "20px", marginBottom: "30px", marginTop: "-20px"}}>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "20px",
+            marginBottom: "50px",
+          }}
+        >
           <div style={{ width: "60%", textAlign: "left" }}>
             <p className="header-1">About Us</p>
             <p className="header-2">
-              Chúng tôi, <b>K.T.N.K</b>,
-              tham gia cuộc thi FPT Biz Talent với mong muốn mang lại những giải pháp xanh – bền vững
-              cho cộng đồng.
+              Chúng tôi, <b>K.T.N.K</b>, tham gia cuộc thi FPT Biz Talent với mong
+              muốn mang lại những giải pháp xanh – bền vững cho cộng đồng.
             </p>
           </div>
           <div style={{ width: "40%", display: "flex", justifyContent: "center" }}>
-            <Image src="/assets/images/team2.jpg" alt="Team K.T.N.K (chua co)" width={600} height={200} style={{marginTop: 100, borderRadius: 30}} />
+            <Image
+              src="/assets/images/team2.jpg"
+              alt="Team K.T.N.K"
+              width={600}
+              height={400}
+              style={{ borderRadius: 30 }}
+            />
           </div>
         </section>
       </AnimatedContent>
 
-      <AnimatedContent  
-          distance={50}
-          direction="vertical"
-          reverse={false}
-          duration={0.8}
-          ease="power3.out"
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.2}
-          delay={1.0}
+      {/* Product Info */}
+      <AnimatedContent
+        distance={50}
+        direction="vertical"
+        duration={0.8}
+        ease="power3.out"
+        initialOpacity={0.0}
+        animateOpacity
+        threshold={0.2}
+        delay={0.6}
       >
-        <section style={{display: "flex", flexDirection: "row-reverse", alignItems: "center", gap: "20px", marginBottom: "30px"}}>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row-reverse",
+            alignItems: "center",
+            gap: "20px",
+            marginBottom: "50px",
+          }}
+        >
           <div style={{ width: "60%", textAlign: "left" }}>
             <p className="header-1">Thông Tin Sản Phẩm</p>
-            <p className="header-2" style={{textAlign: "left", marginLeft: 50}}>
-              - Viên ươm hữu cơ là giải pháp tối ưu hóa quá trình ươm cây con, được chế tạo từ tổ hợp biocomposite thông minh kết hợp nhiều vật liệu sinh học thân thiện với môi trường:
+            <p className="header-2" style={{ marginLeft: 20 }}>
+              Viên ươm hữu cơ là giải pháp tối ưu hóa quá trình ươm cây con, chế tạo
+              từ tổ hợp biocomposite thông minh:
             </p>
-            <p className="header-2" style={{textAlign: "left", marginLeft: 60, fontSize: 20, marginTop: -20, color: '#34aa34'}}>
-                <br />  ● PHA (Polyhydroxyalkanoates): polyester tự nhiên tổng hợp từ vi khuẩn ăn dầu cọ hoặc đường mía, dễ phân hủy sinh học.
-                <br />  ● Tinh bột sắn biến tính: xử lý để tạo màng polymer bền vững, bảo vệ hạt giống.
-                <br />  ● Sợi cellulose từ xơ dừa: tăng độ cứng chắc nhờ cấu trúc sợi tự nhiên, tạo độ tơi xốp cho đất.
-                <br />  ● Than củi + vỏ trứng gà: giúp giữ ẩm, ngăn mầm bệnh, bổ sung khoáng chất như Ca, Mg, K và các vi lượng cần thiết.
-            </p>
+            <ul
+              style={{
+                marginLeft: 40,
+                fontSize: 18,
+                marginTop: 10,
+                color: "#34aa34",
+                lineHeight: "1.8",
+                fontFamily: "Barlow"
+              }}
+            >
+              <li>
+                <b>PHA</b>: polyester tự nhiên từ vi khuẩn, dễ phân hủy sinh học.
+              </li>
+              <li>
+                <b>Tinh bột sắn biến tính</b>: tạo màng polymer bền, bảo vệ hạt giống.
+              </li>
+              <li>
+                <b>Sợi cellulose từ xơ dừa</b>: tăng độ cứng chắc, tạo độ tơi xốp.
+              </li>
+              <li>
+                <b>Than củi + vỏ trứng</b>: giữ ẩm, ngăn mầm bệnh, bổ sung khoáng Ca,
+                Mg, K và vi lượng.
+              </li>
+            </ul>
           </div>
           <div style={{ width: "40%", display: "flex", justifyContent: "center" }}>
-            <Image src="/assets/images/product.png" alt="Vien Uom Huu Co (chua co)" width={650} height={350} style={{marginTop: 50, marginLeft: 50, borderRadius: 30}} />
+            <Image
+              src="/assets/images/product.png"
+              alt="Viên ươm hữu cơ"
+              width={650}
+              height={400}
+              style={{ borderRadius: 30 }}
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "/assets/images/temp.png";
+              }}
+            />
           </div>
         </section>
       </AnimatedContent>
 
-      <AnimatedContent  
-          distance={50}
-          direction="vertical"
-          reverse={false}
-          duration={0.8}
-          ease="power3.out"
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.2}
-          delay={2.0}
+      {/* Target Customers */}
+      <AnimatedContent
+        distance={50}
+        direction="vertical"
+        duration={0.8}
+        ease="power3.out"
+        initialOpacity={0.0}
+        animateOpacity
+        threshold={0.2}
+        delay={1.2}
       >
-        <section style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "20px", marginBottom: "30px"}}>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "20px",
+            marginBottom: "50px",
+          }}
+        >
           <div style={{ width: "60%", textAlign: "left" }}>
             <p className="header-1">Đối Tượng Khách Hàng</p>
-            <p className="header-2" style={{textAlign: "left", marginLeft: 20, color: '#34aa34', fontSize: 25}}>
-              ● Nông dân nhỏ lẻ, hộ gia đình làm nông.<br />
-              ● Người yêu thích trồng trọt tại nhà.<br />
-              ● Các tổ chức giáo dục, trung tâm hướng nghiệp.<br />
-              ● Người tiêu dùng có điều kiện kinh tế, quan tâm đến sản phẩm xanh.<br />
-            </p>
+            <ul
+              style={{
+                marginLeft: 20,
+                fontSize: 22,
+                color: "#34aa34",
+                lineHeight: "1.8",
+                fontFamily: "Barlow",
+                marginTop: 20
+              }}
+            >
+              <li>Nông dân nhỏ lẻ, hộ gia đình làm nông.</li>
+              <li>Người yêu thích trồng trọt tại nhà.</li>
+              <li>Các tổ chức giáo dục, trung tâm hướng nghiệp.</li>
+              <li>
+                Người tiêu dùng có điều kiện kinh tế, quan tâm đến sản phẩm xanh.
+              </li>
+            </ul>
           </div>
           <div style={{ width: "40%", display: "flex", justifyContent: "center" }}>
-            <Image src="/assets/images/farmer1.jpg" alt="Vien Uom Huu Co (chua co)" width={650} height={350} style={{marginTop: 50, marginLeft: 50, borderRadius: 30}} />
+            <Image
+              src="/assets/images/farmer1.jpg"
+              alt="Khách hàng mục tiêu"
+              width={650}
+              height={400}
+              style={{ borderRadius: 30 }}
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "/assets/images/temp.png";
+              }}
+            />
           </div>
         </section>
       </AnimatedContent>

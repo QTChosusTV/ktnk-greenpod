@@ -20,7 +20,7 @@ const QAItem: React.FC<QAItemProps> = ({ question, answer }) => {
         className="w-full px-6 py-4 hover:bg-gray-100 flex justify-between items-center text-left transition-colors duration-200"
         style={{backgroundColor: "#eeffcc"}}
       >
-        <span className="font-medium" style={{fontFamily: "Mozilla"}}>{question}</span>
+        <span className="font-medium" style={{fontFamily: "Barlow"}}>{question}</span>
         <ChevronDown 
           className={`w-5 h-5 text-gray-600 transform transition-transform duration-200 ${
             isOpen ? 'rotate-180' : 'rotate-0'
@@ -33,7 +33,7 @@ const QAItem: React.FC<QAItemProps> = ({ question, answer }) => {
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-6 py-4 text-gray-700 border-t border-gray-200" style={{fontFamily: "Mozilla", backgroundColor: "#ffffff"}}>
+        <div className="px-6 py-4 text-gray-700 border-t border-gray-200" style={{fontFamily: "Barlow", backgroundColor: "#ffffff"}}>
           {answer}
         </div>
       </div>
@@ -79,34 +79,35 @@ export default function Home() {
           <div className="rounded-lg shadow-sm p-6" style={{background: "#fafffa"}}>
 
             <QAItem
-              question="What services do you offer?"
-              answer="We provide comprehensive web development services including custom website design, e-commerce solutions, mobile app development, and digital marketing strategies to help your business grow online."
+              question="GreenPod Organic là gì?"
+              answer="GreenPod Organic là giải pháp nông nghiệp thông minh giúp hạt giống nảy mầm nhanh hơn, giảm cây chết non, tiết kiệm chi phí và thân thiện với môi trường."
             />
-            
+
             <QAItem
-              question="How long does a typical project take?"
-              answer="Project timelines vary depending on complexity and scope. Simple websites typically take 2-4 weeks, while complex web applications can take 2-3 months. We'll provide a detailed timeline during our initial consultation."
+              question="Sản phẩm hoạt động dựa trên công nghệ nào?"
+              answer="GreenPod sử dụng 3 công nghệ: vật liệu sinh học tiên tiến, Bio-Molding (ép nóng/lạnh) và phủ màng Nano Bio-Coating giúp giữ ẩm, chống nấm và bảo vệ hạt giống."
             />
-            
+
             <QAItem
-              question="Do you provide ongoing support?"
-              answer="Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security monitoring, backup services, and technical support to ensure your website runs smoothly."
+              question="Thành phần của viên ươm gồm những gì?"
+              answer="Nguyên liệu tự nhiên như xơ dừa, tro trấu, phân trùn quế, rong biển, vỏ trứng, xương cá và than củi. Tất cả được bọc bởi vỏ sinh học phân hủy hoàn toàn."
             />
-            
+
             <QAItem
-              question="What is your development process?"
-              answer="Our process includes discovery and planning, design mockups, development and testing, client review and feedback, final revisions, and launch. We maintain clear communication throughout each phase."
+              question="Kết quả thử nghiệm ra sao?"
+              answer="Tỷ lệ nảy mầm đạt 96%, tỷ lệ cây sống sau 20 ngày đạt 90–92%. Cây phát triển đồng đều, rễ khỏe và không bị thối."
             />
-            
+
             <QAItem
-              question="Can you work with existing websites?"
-              answer="Absolutely! We can redesign existing websites, add new features, improve performance, fix bugs, or migrate to new platforms. We'll assess your current site and recommend the best approach."
+              question="Sản phẩm mang lại những lợi ích gì?"
+              answer="Giúp cây phát triển khỏe mạnh, giảm chi phí chăm sóc, hoàn toàn phân hủy sinh học, an toàn cho sức khỏe và môi trường."
             />
-            
+
             <QAItem
-              question="What technologies do you use?"
-              answer="We specialize in modern web technologies including React, Next.js, TypeScript, Node.js, and various databases. We choose the best technology stack based on your project requirements."
+              question="Ai có thể sử dụng GreenPod Organic?"
+              answer="Phù hợp cho nông dân, vườn ươm, hợp tác xã và cả người dân thành thị muốn trồng cây sạch tại nhà."
             />
+
           </div>
         </div>
       </AnimatedContent>

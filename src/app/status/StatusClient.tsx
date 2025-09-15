@@ -31,9 +31,9 @@ export default function StatusClient() {
   }, []);
 
   function calculatePrice(amount: number, order_id: number): number {
-    if (order_id == 1) return amount * 45000;
-    else if (order_id == 2) return amount * 85000;
-    else if (order_id == 3) return amount * 800000;
+    if (order_id == 1) return amount * 2600000;
+    else if (order_id == 2) return amount * 2600000;
+    else if (order_id == 3) return amount * 2600000;
     return 0;
   }
 
